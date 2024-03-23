@@ -1,13 +1,13 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Forem API V1",
+    "title": "JobPays wallet API V1",
     "version": "1.0.0",
-    "description": "Access Forem articles, users and other resources via API.\n        For a real-world example of Forem in action, check out [DEV](https://www.dev.to).\n        All endpoints can be accessed with the 'api-key' header and a accept header, but\n        some of them are accessible publicly without authentication.\n\n        Dates and date times, unless otherwise specified, must be in\n        the [RFC 3339](https://tools.ietf.org/html/rfc3339) format."
+    "description": "About Jobpays wallet API, give you access to our walleting service where funds can be send and received, there are other resources via API.\n All endpoints can be accessed with the 'api-key' header and a accept header, but\n some of them are accessible publicly without authentication.\n\n      Dates and date times, unless otherwise specified, must be in\n        the [RFC 3339](https://tools.ietf.org/html/rfc3339) format."
   },
   "servers": [
     {
-      "url": "https://dev.to/api",
+      "url": "https://tabah-zarttech.github.io/JobPays-API-SampleDocs/",
       "description": "Production server"
     }
   ],
@@ -17,29 +17,29 @@
     }
   ],
   "paths": {
-    "/articles": {
+    "/API Authentication": {
       "post": {
-        "summary": "Publish article",
+        "summary": "Here wil hold informations on how to authenticated with our API",
         "tags": [
-          "articles"
+          "Auth"
         ],
-        "description": "This endpoint allows the client to create a new article.\n\n\"Articles\" are all the posts that users create on DEV that typically show up in the feed. They can be a blog post, a discussion question, a help thread etc. but is referred to as article within the code.",
-        "operationId": "createArticle",
+        "description": "To consume this endpoint, you should have generated our access token. It gives access to all information needed to pass the token as an authorization header and generate wellet credentials as a request parameter for every request",
+        "operationId": "authId",
         "parameters": [],
         "responses": {
           "201": {
-            "description": "An Article",
+            "description": "An authentication key",
             "content": {
               "application/json": {
                 "example": {
-                  "type_of": "article",
+                  "type_of": "authentication",
                   "id": 251,
-                  "title": "New article",
-                  "description": "New post example",
-                  "readable_publish_date": "Apr 14",
-                  "slug": "new-article-4aca",
-                  "path": "/username383/new-article-4aca",
-                  "url": "http://localhost:3000/username383/new-article-4aca",
+                  "title": "Create Auth",
+                  "description": "Auth access generated",
+                  "readable_publish_date": "",
+                  "slug": "Auth-service",
+                  "path": "",
+                  "url": "",
                   "comments_count": 0,
                   "public_reactions_count": 0,
                   "collection_id": 11,
