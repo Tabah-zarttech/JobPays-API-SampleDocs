@@ -124,11 +124,11 @@
             "name": "tag",
             "in": "query",
             "required": false,
-            "description": "Using this parameter will retrieve the create business customers that contain the requested tag. Create business customers\nwill be ordered by descending popularity.",
+            "description": "Using this parameter will retrieve articles that contain the requested tag. Articles\nwill be ordered by descending popularity.This parameter can be used in conjuction with `top`.",
             "schema": {
               "type": "string"
             },
-            "example": "Input an example"
+            "example": "discuss"
           },
           {
             "name": "tags",
