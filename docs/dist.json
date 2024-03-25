@@ -278,9 +278,9 @@
         "description": "This endpoint allows the client to retrieve a list of articles. ordered by descending publish date.\n\nIt supports pagination, each page will contain 30 articles by default.",
         "operationId": "getLatestArticles",
         "parameters": [
-          // {
-          //   "$ref": "#/components/parameters/pageParam"
-          // },
+          {
+            "$ref": "#/components/parameters/pageParam"
+          },
           {
             "$ref": "#/components/parameters/perPageParam30to1000"
           }
