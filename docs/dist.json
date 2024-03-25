@@ -8,7 +8,7 @@
   "servers": [
     {
       "url": "https://tabah-zarttech.github.io/JobPays-API-SampleDocs/",
-      "description": "Production server"
+      "description": "staging server"
     }
   ],
   "security": [
@@ -268,73 +268,73 @@
         }
       }
     },
-    "/articles/latest": {
-      "get": {
-        "summary": "Published articles sorted by published date",
-        "security": [],
-        "tags": [
-          "articles"
-        ],
-        "description": "This endpoint allows the client to retrieve a list of articles. ordered by descending publish date.\n\nIt supports pagination, each page will contain 30 articles by default.",
-        "operationId": "getLatestArticles",
-        "parameters": [
-          {
-            "$ref": "#/components/parameters/pageParam"
-          },
-          {
-            "$ref": "#/components/parameters/perPageParam30to1000"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "A List of Articles",
-            "content": {
-              "application/json": {
-                "example": [
-                  {
-                    "type_of": "article",
-                    "id": 257,
-                    "title": "East of Eden178",
-                    "description": "Readymade diy ennui humblebrag 8-bit. Brooklyn hoodie pickled art party vinyl small batch roof. 8-bit...",
-                    "readable_publish_date": "Apr 14",
-                    "slug": "east-of-eden178-3on4",
-                    "path": "/username390/east-of-eden178-3on4",
-                    "url": "http://localhost:3000/username390/east-of-eden178-3on4",
-                    "comments_count": 0,
-                    "public_reactions_count": 0,
-                    "collection_id": null,
-                    "published_timestamp": "2023-04-14T14:45:32Z",
-                    "positive_reactions_count": 0,
-                    "cover_image": "http://localhost:3000/assets/16-77521848e7b5fcc073ac3e0bb004826e97f737238194e4c79330f662cc946ab2.png",
-                    "social_image": "http://localhost:3000/assets/16-77521848e7b5fcc073ac3e0bb004826e97f737238194e4c79330f662cc946ab2.png",
-                    "canonical_url": "http://localhost:3000/username390/east-of-eden178-3on4",
-                    "created_at": "2023-04-14T14:45:32Z",
-                    "edited_at": null,
-                    "crossposted_at": null,
-                    "published_at": "2023-04-14T14:45:32Z",
-                    "last_comment_at": "2023-04-14T14:45:32Z",
-                    "reading_time_minutes": 1,
-                    "tag_list": [
-                      "javascript",
-                      "html",
-                      "discuss"
-                    ],
-                    "tags": "javascript, html, discuss",
-                    "user": {
-                      "name": "Starla \"Eric\" \\:/ Kunde",
-                      "username": "username390",
-                      "twitter_username": "twitter390",
-                      "github_username": "github390",
-                      "user_id": 1311,
-                      "website_url": null,
-                      "profile_image": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg",
-                      "profile_image_90": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg"
-                    },
-                    "flare_tag": {
-                      "name": "discuss",
-                      "bg_color_hex": "#000000",
-                      "text_color_hex": "#ffffff"
-                    }
+    // "/articles/latest": {
+    //   "get": {
+    //     "summary": "Published articles sorted by published date",
+    //     "security": [],
+    //     "tags": [
+    //       "articles"
+    //     ],
+    //     "description": "This endpoint allows the client to retrieve a list of articles. ordered by descending publish date.\n\nIt supports pagination, each page will contain 30 articles by default.",
+    //     "operationId": "getLatestArticles",
+    //     "parameters": [
+    //       {
+    //         "$ref": "#/components/parameters/pageParam"
+    //       },
+    //       {
+    //         "$ref": "#/components/parameters/perPageParam30to1000"
+    //       }
+    //     ],
+    //     "responses": {
+    //       "200": {
+    //         "description": "A List of Articles",
+    //         "content": {
+    //           "application/json": {
+    //             "example": [
+    //               {
+    //                 "type_of": "article",
+    //                 "id": 257,
+    //                 "title": "East of Eden178",
+    //                 "description": "Readymade diy ennui humblebrag 8-bit. Brooklyn hoodie pickled art party vinyl small batch roof. 8-bit...",
+    //                 "readable_publish_date": "Apr 14",
+    //                 "slug": "east-of-eden178-3on4",
+    //                 "path": "/username390/east-of-eden178-3on4",
+    //                 "url": "http://localhost:3000/username390/east-of-eden178-3on4",
+    //                 "comments_count": 0,
+    //                 "public_reactions_count": 0,
+    //                 "collection_id": null,
+    //                 "published_timestamp": "2023-04-14T14:45:32Z",
+    //                 "positive_reactions_count": 0,
+    //                 "cover_image": "http://localhost:3000/assets/16-77521848e7b5fcc073ac3e0bb004826e97f737238194e4c79330f662cc946ab2.png",
+    //                 "social_image": "http://localhost:3000/assets/16-77521848e7b5fcc073ac3e0bb004826e97f737238194e4c79330f662cc946ab2.png",
+    //                 "canonical_url": "http://localhost:3000/username390/east-of-eden178-3on4",
+    //                 "created_at": "2023-04-14T14:45:32Z",
+    //                 "edited_at": null,
+    //                 "crossposted_at": null,
+    //                 "published_at": "2023-04-14T14:45:32Z",
+    //                 "last_comment_at": "2023-04-14T14:45:32Z",
+    //                 "reading_time_minutes": 1,
+    //                 "tag_list": [
+    //                   "javascript",
+    //                   "html",
+    //                   "discuss"
+    //                 ],
+    //                 "tags": "javascript, html, discuss",
+    //                 "user": {
+    //                   "name": "Starla \"Eric\" \\:/ Kunde",
+    //                   "username": "username390",
+    //                   "twitter_username": "twitter390",
+    //                   "github_username": "github390",
+    //                   "user_id": 1311,
+    //                   "website_url": null,
+    //                   "profile_image": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg",
+    //                   "profile_image_90": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg"
+    //                 },
+     "flare_tag": {
+            "name": "discuss",
+            "bg_color_hex": "#000000",
+            "text_color_hex": "#ffffff"
+              }
                   },
                   {
                     "type_of": "article",
