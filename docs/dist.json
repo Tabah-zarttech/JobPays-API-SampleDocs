@@ -330,12 +330,12 @@
     //                   "profile_image": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg",
     //                   "profile_image_90": "/uploads/user/profile_image/1311/11a4ee42-e02e-4b2f-87c1-6123579350b7.jpeg"
     //                 },
-     "flare_tag": {
-            "name": "discuss",
-            "bg_color_hex": "#000000",
-            "text_color_hex": "#ffffff"
-              }
-                  },
+    //  "flare_tag": {
+    //         "name": "discuss",
+    //         "bg_color_hex": "#000000",
+    //         "text_color_hex": "#ffffff"
+    //           }
+    //               },
                   {
                     "type_of": "article",
                     "id": 256,
